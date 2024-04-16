@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "MyDjango"
+version = "0.1.0"
+description = ""
+authors = ["Nush <steven370832@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.12"
+django = "^5.0.3"
+markdown = "^3.6"
+ruff = "^0.3.5"
+pre-commit = "^3.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+# 1. Enable flake8-bugbear (`B`) rules, in addition to the defaults.
+select = ["E4", "E7", "E9", "F", "B"]
+
+# 2. Avoid enforcing line-length violations (`E501`)
+ignore = ["E501"]
